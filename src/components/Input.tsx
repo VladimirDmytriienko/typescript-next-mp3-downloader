@@ -10,7 +10,7 @@ async function generatorLink(urlll: string): Promise<string> {
         method: 'get',
         url: 'https://youtube-mp36.p.rapidapi.com/dl',
         headers: {
-            'X-RapidAPI-Key': process.env.NEXT_PUBLIC_API_PASS,
+            'X-RapidAPI-Key': '840bb7bd7amsh6e47bf1e8b33fb6p183936jsn9ae639094dfd',
             'X-RapidAPI-Host': 'youtube-mp36.p.rapidapi.com'
         },
         params: {
@@ -54,6 +54,7 @@ export const Input = () => {
 
             <input
                 value={urlll}
+                placeholder="https://www.youtube.com/..." 
                 onChange={(e) => setUrl(e.target.value)}
                 type="text"
                 className="w-full mt-4 p-3 rounded-lg border border-gray-300 focus:border-orange-500 focus:outline-none"
